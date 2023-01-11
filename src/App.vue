@@ -1,19 +1,14 @@
 <script setup>
-import {ref} from "vue";
-const count = ref(7);
+import Welcome from "@/components/Welcome.vue";
 
 
 </script>
 
 <template>
   <main>
-    <div>
-      <h4>The current count is...</h4>
-      <h1>{{count}}</h1>
-      <button @click = count-->-</button>
-      <button @click = count++>+</button>
-    </div>
+    <Welcome/>
   </main>
+
 </template>
 
 <style scoped>
@@ -24,9 +19,6 @@ const count = ref(7);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  div{
-    text-align: center;
   }
 
 </style>
